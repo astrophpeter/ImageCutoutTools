@@ -29,5 +29,14 @@ def twomass_cutouts(position, image_size=0.0001):
     bands = table.array['band'][fits_mask][:3]
     return {band: fits.open(url) for band, url in zip(bands, fits_url)}
 
+def wise_cutouts(position, image_size=0.0001):
+    """
+    Get the fits cutouts from the wise survey
+
+    :param position: On Sky position of the centre of the cutout
+    :param image_size: Size of the cutout
+    :return:
+    """
+
 position = SkyCoord(ra=130.0, dec=-30.0, unit='degree')
 print(twomass_cutouts(position))
