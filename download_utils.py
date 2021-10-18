@@ -7,6 +7,7 @@ from astroquery.hips2fits import hips2fits
 from regions import CircleSkyRegion
 from astroquery.cds import cds
 import yaml
+from astro_ghost.ghostHelperFunctions import getTransientHosts, getGHOST
 
 
 def cutout(position=None, survey=None, fov=0.001, width=1000, height=1000):
@@ -44,14 +45,31 @@ def position_in_footprint(position=None, survey=None):
     surveys_covering_region = list(cds.query_region(region=cone, fields=['ID'])['ID'])
     return survey in surveys_covering_region
 
-with open("survey_metadata.yml", "r") as stream:
-    data = yaml.safe_load(stream)
+def find_host_information(supernova_position=None):
+    """
+    Finds the position of the host galaxy give the position of the supernova.
+    :param supernova_position: Position of the supernova
+    :return host information: Pandas dataframe fo host information
+    """
+    getGHOST(real=False, verbose=0)
+    host_information = getTransientHosts(snCoord=[supernova_position],
+                                         snName=['I do not know the name'],
+                                         verbose=0, starcut='normal')
+    return host_information
 
-for image in data:
-    print(position_in_footprint(position=SkyCoord(ra=130, dec=30, unit='deg'),
-                                survey=data[image]['hips_id']))
+supernova_position = SkyCoord(ra=10, dec=30, unit='deg')
+host = find_host_information(supernova_position=supernova_position)
+print(type(host))
 
+#£with open("survey_metadata.yml", "r") as stream:
+#    data = yaml.safe_load(stream)
 
+#for image in data:
+#    print(position_in_footprint(position=SkyCoord(ra=130, dec=30, unit='deg'),
+#                                survey=data[image]['hips_id']))
+
+#position = SkyCoord(ra=10, dec=30, unit='deg')
+#print(find_host_position(position))
 
 from astropy.io import fits
 import io
