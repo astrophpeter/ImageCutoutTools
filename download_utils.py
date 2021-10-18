@@ -45,21 +45,26 @@ def position_in_footprint(position=None, survey=None):
     surveys_covering_region = list(cds.query_region(region=cone, fields=['ID'])['ID'])
     return survey in surveys_covering_region
 
-def find_host_information(supernova_position=None):
+def find_host_data(supernova_position=None):
     """
-    Finds the position of the host galaxy give the position of the supernova.
+    Finds the information about the host galaxy given the position of the supernova.
     :param supernova_position: Position of the supernova
-    :return host information: Pandas dataframe fo host information
+    :return host information: A dictionary of host information
     """
-    getGHOST(real=False, verbose=0)
-    host_information = getTransientHosts(snCoord=[supernova_position],
-                                         snName=['I do not know the name'],
-                                         verbose=0, starcut='normal')
-    return host_information
+    #getGHOST(real=False, verbose=0)
+    host_data = getTransientHosts(snCoord=[supernova_position],
+                                         snName=['No Name'],
+                                         verbose=1, starcut='normal')
+    return {'position': SkyCoord(ra=host_data['raMean'],
+                                 dec=host_data['decMean'],
+                                 unit='deg')
+            }
 
-supernova_position = SkyCoord(ra=10, dec=30, unit='deg')
-host = find_host_information(supernova_position=supernova_position)
-print(type(host))
+
+
+supernova_position = SkyCoord(ra=188.5126408, dec=7.6991489, unit='deg')
+host = find_host_data(supernova_position=supernova_position)
+print(host)
 
 #£with open("survey_metadata.yml", "r") as stream:
 #    data = yaml.safe_load(stream)
