@@ -62,9 +62,9 @@ def find_host_data(supernova_position=None):
 
 
 
-supernova_position = SkyCoord(ra=188.5126408, dec=7.6991489, unit='deg')
-host = find_host_data(supernova_position=supernova_position)
-print(host)
+#supernova_position = SkyCoord(ra=188.5126408, dec=7.6991489, unit='deg')
+#host = find_host_data(supernova_position=supernova_position)
+#print(host)
 
 #£with open("survey_metadata.yml", "r") as stream:
 #    data = yaml.safe_load(stream)
