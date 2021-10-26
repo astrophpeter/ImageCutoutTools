@@ -10,7 +10,7 @@ import yaml
 from astro_ghost.ghostHelperFunctions import getTransientHosts, getGHOST
 
 
-def cutout(position=None, survey=None, fov=0.001, width=1000, height=1000):
+def cutout(position=None, survey=None, fov=0.3, width=300, height=300):
     """
     Get image cutout for a survey in a particular band
 
@@ -21,7 +21,7 @@ def cutout(position=None, survey=None, fov=0.001, width=1000, height=1000):
     :param image_height: image height in pixels
     :return: fits image
     """
-    fits = hips2fits.query(hips=survey,
+    fits = hips2fits.query(hips=survey.hips_id,
                            ra=position.ra,
                            dec=position.dec,
                            width=width,
@@ -30,20 +30,6 @@ def cutout(position=None, survey=None, fov=0.001, width=1000, height=1000):
                            projection='TAN',
                            format='fits')
     return fits
-
-def position_in_footprint(position=None, survey=None):
-    """
-    Check is a position is in a given survey footprint
-
-    :param position: On Sky position of the center of the cutout
-    :param survey: Survey and band, for allowed options see https://aladin.u-strasbg.fr/hips/list
-    :return: True if the position is in the survey footprint, False otherwise
-    """
-    center = SkyCoord(position.ra.degree, position.dec.degree, unit='deg')
-    radius = Angle(0.001, unit='deg')
-    cone = CircleSkyRegion(center, radius)
-    surveys_covering_region = list(cds.query_region(region=cone, fields=['ID'])['ID'])
-    return survey in surveys_covering_region
 
 def find_host_data(supernova_position=None):
     """
@@ -55,8 +41,8 @@ def find_host_data(supernova_position=None):
     host_data = getTransientHosts(snCoord=[supernova_position],
                                          snName=['No Name'],
                                          verbose=1, starcut='normal')
-    return {'position': SkyCoord(ra=host_data['raMean'],
-                                 dec=host_data['decMean'],
+    return {'position': SkyCoord(ra=host_data['raMean'][0],
+                                 dec=host_data['decMean'][0],
                                  unit='deg')
             }
 
