@@ -8,28 +8,9 @@ from regions import CircleSkyRegion
 from astroquery.cds import cds
 import yaml
 from astro_ghost.ghostHelperFunctions import getTransientHosts, getGHOST
+from urllib3.exceptions import ReadTimeoutError
+from astropy.units import Quantity
 
-
-def cutout(position=None, survey=None, fov=0.3, width=300, height=300):
-    """
-    Get image cutout for a survey in a particular band
-
-    :param position: On Sky position of the center of the cutout
-    :param survey: Survey and band, for allowed options see https://aladin.u-strasbg.fr/hips/list
-    :param image_fov: Field of view in decimal degrees
-    :param image_width: image width in pixels
-    :param image_height: image height in pixels
-    :return: fits image
-    """
-    fits = hips2fits.query(hips=survey.hips_id,
-                           ra=position.ra,
-                           dec=position.dec,
-                           width=width,
-                           height=height,
-                           fov=fov * (u.deg),
-                           projection='TAN',
-                           format='fits')
-    return fits
 
 def find_host_data(supernova_position=None):
     """

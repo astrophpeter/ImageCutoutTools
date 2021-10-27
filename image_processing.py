@@ -10,9 +10,10 @@ import numpy as np
 import yaml
 import astropy.units as u
 from utils import survey_list, image_contains_data
-
+from urllib3.exceptions import ReadTimeoutError
 from photutils.aperture import EllipticalAperture
 from astropy.wcs.utils import skycoord_to_pixel
+from astropy.units import Quantity
 #with open("survey_metadata.yml", "r") as stream:
 #    survey_metadata = yaml.safe_load(stream)
 #
@@ -90,6 +91,8 @@ def find_largest_aperture(host_position, survey_images):
 import matplotlib.pyplot as plt
 from matplotlib.colors import PowerNorm
 
+
+
 def run_forced_host_photometry(supernova_position, survey_metadata_path=None):
     """
     main program for running host forced photometry
@@ -102,9 +105,7 @@ def run_forced_host_photometry(supernova_position, survey_metadata_path=None):
     host_position = host_data['position']
 
     all_surveys = survey_list(survey_metadata_path=survey_metadata_path)
-    all_images = [cutout(host_position, survey) for survey in all_surveys]
-    images = {survey.name: image for image, survey in zip(all_images, all_surveys)
-              if image_contains_data(image)}
+    images = download_image_data(host_position, all_surveys)
 
     apertures = {name: host_aperture(image, host_position) for name, image in images.items()}
     plt.imshow(images['PanSTARRS_g'][0].data, cmap='gray', norm=PowerNorm(0.5))
@@ -124,8 +125,6 @@ def run_forced_host_photometry(supernova_position, survey_metadata_path=None):
     plt.show()
 supernova_position = SkyCoord(ra=188.5148408, dec=7.6991489, unit='deg')
 print(run_forced_host_photometry(supernova_position, survey_metadata_path='survey_metadata.yml'))
-
-
 
 #import astropy.units as u
 #from photutils.aperture import EllipticalAperture
