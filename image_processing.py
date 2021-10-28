@@ -23,53 +23,7 @@ from astropy.units import Quantity
 #threshold = detect_threshold(data, nsigma=2.)
 
 
-def build_source_catalog(image=None, background_estimator=MedianBackground(), box_size=50, threshhold_sigma=2.0, npixels=10):
-    """
-    takes images data and builds a source cataloge
 
-    :param image_data: fits image data
-    :param background_estimator:
-    :param box_size:
-    :param threshhold_sigma:
-    :return source catalog:
-    """
-
-    image_data = image[0].data
-
-    background = Background2D(image_data, box_size, bkg_estimator=background_estimator)
-    background_subtracted_data = image_data - background.background
-    threshold = threshhold_sigma * background.background_rms
-
-    segmentation = detect_sources(background_subtracted_data, threshold, npixels=npixels)
-    deblended_segmentation = deblend_sources(background_subtracted_data, segmentation, npixels=npixels)
-
-    return SourceCatalog(background_subtracted_data, deblended_segmentation)
-
-def match_sources_to_host(image, source_catalog, host_position):
-    """
-    Matches the host galaxy to a source in the source cataloge.
-
-    :param image:
-    :param source_catalog:
-    :param host_position:
-    :return Host galaxy information:
-    """
-
-    world_coordinate_system = WCS(image[0].header)
-    host_x_pixel, host_y_pixel = world_coordinate_system.world_to_pixel(host_position)
-    source_x_pixels, source_y_pixels = source_catalog.xcentroid, source_catalog.ycentroid
-    closest_source_index = np.argmin(np.hypot(host_x_pixel - source_x_pixels, host_y_pixel - source_y_pixels))
-    return source_catalog[closest_source_index]
-
-def elliptical_sky_aperture(source_cat, world_coordinate_system, r=3.0):
-    """Constructs elliptical sky aperture object
-    """
-    center = (source_cat.xcentroid, source_cat.ycentroid)
-    semi_major_axis = source_cat.semimajor_sigma.value * r
-    semi_minor_axis = source_cat.semiminor_sigma.value * r
-    orientation_angle = source_cat.orientation.to(u.rad).value
-    pixel_aperture = EllipticalAperture(center, semi_major_axis, semi_minor_axis, theta=orientation_angle)
-    return pixel_aperture.to_sky(world_coordinate_system)
 
 def host_aperture(image, host_position):
     source_catalog = build_source_catalog(image)

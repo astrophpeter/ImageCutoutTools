@@ -11,24 +11,6 @@ from astro_ghost.ghostHelperFunctions import getTransientHosts, getGHOST
 from urllib3.exceptions import ReadTimeoutError
 from astropy.units import Quantity
 
-
-def find_host_data(supernova_position=None):
-    """
-    Finds the information about the host galaxy given the position of the supernova.
-    :param supernova_position: Position of the supernova
-    :return host information: A dictionary of host information
-    """
-    #getGHOST(real=False, verbose=0)
-    host_data = getTransientHosts(snCoord=[supernova_position],
-                                         snName=['No Name'],
-                                         verbose=1, starcut='normal')
-    return {'position': SkyCoord(ra=host_data['raMean'][0],
-                                 dec=host_data['decMean'][0],
-                                 unit='deg')
-            }
-
-
-
 #supernova_position = SkyCoord(ra=188.5126408, dec=7.6991489, unit='deg')
 #host = find_host_data(supernova_position=supernova_position)
 #print(host)
