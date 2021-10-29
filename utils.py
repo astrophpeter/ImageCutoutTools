@@ -96,13 +96,14 @@ def cutout(position, survey, fov=Quantity(0.2, unit='deg')):
                                dec=position.dec, width=int(num_pixels),
                                height=int(num_pixels), fov=fov,
                                projection='TAN', format='fits')
+        print(f'Successfully downloaded {survey.name} data')
     except ReadTimeoutError:
         print(f'Conection timed out, could not download {survey.name} data')
         fits = None
     return fits
 
 
-def download_image_data(position, survey_list, fov=Quantity(0.2, unit='deg')):
+def download_image_data(position, survey_list, fov=Quantity(0.5, unit='deg')):
     """
     Download all available imaging from a list of surveys
 
@@ -265,13 +266,13 @@ def estimate_background(image):
         Background estimate of the image
     """
     image_data = image[0].data
-    box_size = int(0.1 * np.sqrt(image_data.size))
+    box_size = int(0.01 * np.sqrt(image_data.size))
     return Background2D(image_data, box_size=box_size)
 
 
 def construct_aperture(image, position):
     """
-    Construct an ellipitcal aperture at the position in the image
+    Construct an elliptical aperture at the position in the image
 
     Parameters
     ----------
@@ -282,10 +283,11 @@ def construct_aperture(image, position):
 
 
     """
+    wcs = WCS(image[0].header)
     background = estimate_background(image)
     catalog = build_source_catalog(image, background)
-    source_data = match_source(image, catalog, position)
-    wcs = WCS(image[0].header)
+    source_data = match_source(position, catalog, wcs)
+    print(f'source data: {dir(source_data)}')
     return elliptical_sky_aperture(source_data, wcs)
 
 
@@ -294,9 +296,17 @@ def pick_largest_aperture(position, image_dict):
 
     Parameters
     ----------
+    :position : :class:`~astropy.coordinates.SkyCoord`
+        On Sky position of the source which aperture is to be measured.
+    :image_dic: dict[str:~astropy.io.fits.HDUList]
+        Dictionary of images from different surveys, key is the the survey
+        name.
 
     Returns
     -------
+    :largest_aperture: dict[str:~photutils.aperture.SkyEllipticalAperture]
+        Dictionary of contain the image with the largest aperture, key is the
+         name of the survey.
     """
 
     apertures = {name : construct_aperture(image, position)
@@ -310,4 +320,31 @@ def pick_largest_aperture(position, image_dict):
         aperture_areas[image_name] = aperture_area
 
     max_size_name = max(aperture_areas, key = aperture_areas.get)
-    return {max_size_name : aperture_areas[max_size_name]}
+    return {max_size_name : apertures[max_size_name]}
+
+
+def run_forced_aperture_photometry(position, survey_list):
+    """
+
+    Parameters
+    ----------
+
+    Returns
+    -------
+
+
+
+    """
+
+    images = download_image_data(position, survey_list)
+    largest_aperture = pick_largest_aperture(position, images)
+
+    print(largest_aperture)
+
+
+
+supernova_position = SkyCoord(ra=188.5148408, dec=7.6991489, unit='deg')
+survey_list = survey_list('survey_metadata.yml')
+
+run_forced_aperture_photometry(supernova_position, survey_list[:8])
+
