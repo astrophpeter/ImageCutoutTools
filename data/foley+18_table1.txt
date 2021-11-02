@@ -1,0 +1,274 @@
+2015I   PSN J07174570+2320406                                           NGC 2357                       CBET 4106  ATEL 7476
+2015M   PSN J13003230+2758411           CSS150521:130032+275841         COMAi J130032.301+275841.02    CBET 4123  ATEL 7528  06gz
+                                        KISS15n                                                        ATEL 7532  ATEL 7529
+                                        PS15apc                                                                   ATEL 7532
+2015ar  PSN J01072038+3223598           CSS151130:010720+322359         NGC 383                        CBET 4193  ATEL 8291
+2015az  PSN J03094251+4058293           PS15dqn                         IC 290                         CBET 4208  ATEL 8348
+2016E   PS16n                                                           2MASX J05034387+0324429        ATEL 8524  ATEL 8524
+2016F   ASASSN-16ad                     CSS160204:013932+334936         KUG 0136+335                   ATEL 8521  ATEL 8532
+2016H   PS16fa                                                          CGCG 036-091                   ATEL 8534  ATEL 8534
+2016J   PS15dpl                                                         Anonymous                      GCN 18786  GCN 18811
+        ASASSN-16ah                                                                                    ATEL 8539  ATEL 8539
+2016K   ASASSN-16aj                     PS16rs                          NGC 1562                       ATEL 8542  ATEL 8550
+2016W   PSN J02303969+4214089                                           NGC 946                        TNS        ATEL 8580
+2016ac  ASASSN-16av                                                     NGC 3926 NED02                 ATEL 8569  ATEL 8636
+2016ah  PS16el                                                          2MASX J10511252+1921474        ATEL 8524  ATEL 8524
+2016ai  PS16ez                                                          SDSS J092426.62+051018.1       ATEL 8524  ATEL 8524  91T
+2016ys  ASASSN-16ay                                                     UGC 3738                       ATEL 8609  ATEL 8613
+2016zd  ASASSN-16bc                     PS16aqd                         2MASX J12052488-2123572        ATEL 8628  ATEL 8634
+2016acs PS16aer                                                         CGCG 95-67                     ATEL 8663  ATEL 8663
+2016aew ASASSN-16bq                                                     IC 986                         ATEL 8685  ATEL 8694
+2016aex ASASSN-16br                                                     2MASX J15453055-1309057        ATEL 8685  ATEL 8694  91T
+2016afb CSS160129:074030+105600         PS16acs                         Anonymous                      ATEL 8613  ATEL 8613
+2016afk PS16agp                                                         2MASXi J1022298+150547         ATEL 8702  ATEL 8702
+2016ajf                                                                 NGC 1278                       TNS        ATEL 8713  91bg
+2016ajl                                                                 2MASX J04422451-2143312        ATEL 8716  ATEL 8719
+2016alt PS16amf                                                         GALEXASC J063701.16+441611.9   TNS        TNS        06gz
+2016aqa LSQ16sf                                                         LCRS B112120.0-051639          ATEL 8739  ATEL 8739  91T
+2016aqb LSQ16te                                                         2MASXi J1121579-135849         ATEL 8739  ATEL 8739  91T
+2016aqs Gaia16agf                       PS16aro                         Anonymous                      ATEL 8754  ATEL 8754
+2016aqt                                 CSS160307:134551+264747         SDSS J134550.90+264747.4       TNS        ATEL 8774  91T
+                                        PS16asv
+2016aqz ASASSN-16ch                     PS16brh                         CGCG 101-008                   ATEL 8763  ATEL 8771
+2016arc ASASSN-16ci                                                     NGC 1272                       ATEL 8765  ATEL 8765  91bg
+2016asf ASASSN-16cs                     ATLAS16aep                      KUG 0647+311                   ATEL 8784  ATEL 8788
+2016aud ASASSN-16ct                                                     SDSS J151354.30+044525.7       ATEL 8796  ATEL 8798  91T
+2016axb PS16axi                                                         2MASX J10480747+0010017        TNS        ATEL 8822
+2016axw MASTER OT J142718.40-014031.0   PS16ayd                         2MASX J14271887-0140428        ATEL 8791  ATEL 8823
+2016ayf ASASSN-16cy                                                     CGCG 295-010                   ATEL 8801  ATEL 8830  91T
+2016ayg PTSS-16hs                       Gaia16ahw                       SDSS J073017.25+250153.5       TNS        ATEL 8824
+2016baq SNhunt313                       ASASSN-16db                     UGC 06198                      TNS        ATEL 8833
+                                        2016bcy                                                        ATEL 8813
+2016bew LSQ16acz                        PS16bby                         2MASX J14201699-2211186        TNS        ATEL 8829
+2016bey ATLAS16ahj                                                      2MASX J11374023+5704420        TNS        ATEL 8844
+2016bfc ATLAS16agv                                                      Anonymous                      TNS        ATEL 8844
+2016bkw Gaia16acv                       PS16aqu                         SDSS J115949.80+544807.1       TNS        ATEL 8683
+2016blc ASASSN-16dn                     CSS160404:104849-201550         GALEXASC J104848.62-201544.1   ATEL 8885  ATEL 8896
+                                        PS16brg
+2016blg PTSS-16cfd                      MASTER OT J132713.97-021611.8   SDSS J132713.81-021615.2       TNS        ATEL 8906
+                                        MLS160401:132714-021613
+2016blh PTSS-16cfg                      PS16boq                         CGCG 018-062                   TNS        ATEL 8899
+2016blj ASASSN-16dw                     PS16cce                         2MASX J13300119-2758297        ATEL 8897  ATEL 8902
+2016blm LSQ16ahs                        PS16bom                         Anonymous                      TNS        ATEL 8902
+2016bln iPTF16abc                       MASTER OT J133445.47+135113.8   NGC 5221                       ATEL 8907  ATEL 8909  91T
+                                        PS16brj
+                                        CSS160417:133446+135114
+2016bmc ASASSN-16ej                                                     UGC 11409                      ATEL 8839  ATEL 8955
+2016bmh ASASSN-16em                                                     GALEXASC J133213.24+844042.7   ATEL 8953  ATEL 8953
+2016bpb PS16bnz                                                         UGC 05586 NED02                TNS        ATEL 8918
+2016cby ASASSN-16et                     iPTF16aiw                       2MASX J10200192+5627397        ATEL 9005  ATEL 9026
+2016ccj ASASSN-16ex                     CSS160513:171024+262348         SDSS J171023.63+262350.3       ATEL 9020  ATEL 9023  06gz
+                                                                                                                  ATEL 9024
+2016cck PTSS-16efw                                                      2MASX J17353788+0848387        TNS        ATEL 9023
+                                                                                                                  ATEL 9025
+2016ccz iPTF16auf                       PS16cpd                         MRK 685                        ATEL 9049  ATEL 9049
+                                        Gaia16aqm
+2016cob ASASSN-16fo                                                     2MASX J13323577-0516218        ATEL 9081  ATEL 9099  91T
+2016coj KAIT-16X                        AT2016cop                       NGC 4125                       ATEL 9095  ATEL 9095
+2016cor                                 PS16crs                         SDSS J154431.47+161814.0       TNS        TNS
+2016cpy ASASSN-16fs                     SNhunt317                       UGC 9523                       ATEL 9114  ATEL 9129
+2016cuv                                                                 GALEXASC J161914.56+402512.5   TNS        TNS
+2016cvn ATLAS16bdg                                                      NGC 4708                       ATEL 9151  ATEL 9165
+2016cvv PTSS-16ijc                      PS16cyd                         CGCG 280-24                    TNS        ATEL 9171
+2016cvw PTSS-16ipw                                                      MCG +2-58-8                    TNS        ATEL 9173
+2016cxb MASTER OT J211223.35+144645.1   PS16cvc                         GALEXASC J211223.05+144644.9   ATEL 9174  ATEL 9182
+2016cyt                                 PS16dst                         NGC 7033                       TNS        ATEL 9210
+2016czc ASASSN-16hc                                                     2MASX J13590394+3308172        ATEL 9223  ATEL 9237  91T
+2016dxe Gaia16aki                                                       SDSS J155910.36+143829.4       TNS        ATEL 8934
+2016dxv Gaia16alq                       PS16ccn                         Anonymous                      TNS        ATEL 8991
+2016eee CSS160428:132307+523857         Gaia16ash                       SDSS J132307.25+523858.1       TNS        ATEL 9019
+2016eja ASASSN-16hr                     Gaia16azu                       2MASX J22253147+3859010        ATEL 9270  ATEL 9273
+2016eky PS16dnp                         CSS160904:225940+020859         2MASX J22593744+0209095        TNS        ATEL 9302
+                                        MASTER OT J225939.54+020859.6                                  ATEL 9297
+2016enx ATLAS16bwu                                                      GALEXASC J011422.73-130915.9   TNS        ATEL 9377  91T
+2016eoa                                 PS16env                         NGC 83                         TNS        ATEL 9335
+                                        Gaia16bay
+2016eqb ASASSN-16hz                                                     2MASX J23154564-0120135        ATEL 9332  ATEL 9333
+2016esh ASASSN-16ie                                                     2MASXi J1604144+164124         ATEL 9341  ATEL 9345
+2016euj ASASSN-16ip                                                     ESO 479-G7                     ATEL 9353  ATEL 9368
+                                                                                                                  ATEL 9372
+2016ews Gaia16bby                                                       IC 4526                        TNS        ATEL 9381  91T?
+2016fbk                                                                 UGC 1212                       TNS        ATEL 9384
+2016fbo Gaia16bba                       CSS160829:010136+170605         GALEXASC J010135.75+170604.9   TNS        ATEL 9421
+                                        MLS160905:010136+170605
+2016fff ASASSN-16jf                     PS16eqt                         UGCA 430                       ATEL 9398  ATEL 9406
+2016ffh ATLAS16cpu                      Gaia16bcm                       CGCG 249-11                    ATEL 9400  ATEL 9403
+2016gfr                                                                 2MASX J18193566+2347137        TNS        TNS
+2016ghq                                                                 UGC 11199                      TNS        ATEL 9532
+2016gkt PS16ejh                                                         ESO 472- G 013                 ATEL 9531  ATEL 9549
+2016glp PS16ejp                                                         GALEXASC J233613.95+234146.7   TNS        ATEL 9542
+2016glz CSS160922:000554+082548         PS16eoc                         GALEXASC J000556.57+082613.6   TNS        TNS
+                                        iPTF16glz
+2016gmb PTSS-16oqc                                                      GALEXASC J003445.02-060936.8   TNS        ATEL 9542
+2016gmg PTSS-16opy                      Gaia16bky                       2MASX J21234100+3307075        TNS        ATEL 9569
+2016gou ATLAS16cxr                                                      Anonymous                      TNS        ATEL 9549
+2016grz                                                                 SDSS J015533.01+334921.3       TNS        ATEL 9583
+2016gsn ASASSN-16la                     PS16esq                         2MASXi J0229172+180515         ATEL 9571  ATEL 9581
+2016gsu PTSS-16pur                                                      SDSS J010824.54+210906.3       TNS        ATEL 9607
+2016gye ASASSN-16lg                                                     ARK 530                        ATEL 9601  ATEL 9610
+2016hgw ATLAS16dpb                      iPTF16hgw                       CGCG 415-40                    ATEL 9685  ATEL 9696
+2016hhv ATLAS16drn                                                      2MASX J23354784+2042265        TNS        ATEL 9706
+2016hjk PS16eqv                                                         2MASX J02314347-2500088        TNS        ATEL 9682  91T
+2016hli ATLAS16dod                                                      MCG +08-07-008                 ATEL 9685  ATEL 9695
+2016hns ATLAS16dpv                                                      KUG 2137+241                   ATEL 9685  ATEL 9696
+2016hot CSS161013:015319+171853         PS16etp ATLAS16dna              Anonymous                      TNS        ATEL 9695  91T
+2016hpx Gaia16bwt                       ATLAS16dqh                      2MASXi J0603164-265353         TNS        ATEL 9704
+                                        PS17aji
+2016hqf PS16evk                                                         2MASX J22332338-0121266        TNS        ATEL 9711  91T
+2016htm ATLAS16dsh                      Gaia16bvq                       2MASX J02320134-2639576        TNS        ATEL 9711
+                                        PS16fci
+2016htn ATLAS16dsj                      PS16fch                         2MASX J02112819-1630409        TNS        ATEL 9711
+                                        Gaia16bxx
+2016ick PS16fbb                         Gaia16bvg                       GALEXASC J000703.01-204149.5   TNS        ATEL 9793
+2016idy MASTER OT J013415.01-174843.9   PS16fbm                         GALEXASC J013415.00-174836.1   ATEL 9540  ATEL 9597
+2016ixf Gaia16cdf                       PS17bll                         SDSS J103944.53+150204.7       TNS        ATEL 9889
+2016iyv ASASSN-16oz                     Gaia16cgf                       GALEXASC J090013.19-133803.5   ATEL 9887  ATEL 9889  91T
+                                        PS17bqr
+2016jem ATLAS16eej                                                      GALEXASC J235216.94-224520.3   TNS        ATEL 9930
+2017dz  iPTF17dz                        PS17amw                         SDSS J082425.68+245951.5       GCN 20398  GCN 20408
+2017hm  ASASSN-17aj                     PS17bhh                         MCG -02-30-003                 ATEL 9952  ATEL 9968
+2017hn                                  PS17bpa                         UGC 8204                       TNS        ATEL 9959
+2017jl  ATLAS17air                                                      2MASX J00573150+3011098        TNS        ATEL 9990  91T?
+2017lc  Gaia17aea                                                       Anonymous                      TNS        ATEL 9990  00cx?; 91bg?
+2017lm  ATLAS17aix                      Gaia17akm                       2MASX J03013238-1501028        TNS        ATEL 9981
+2017ln  ASASSN-17at                     PS17bhi                         2MASX J11383367+2523532        ATEL 9989  ATEL 9980
+2017lv  ATLAS17ajn                                                      ESO 440-G1                     TNS        ATEL 10012
+2017me  ATLAS17ajs                      PS17bhg                         KUG 1125+276                   TNS        ATEL 10012
+2017mf                                  Gaia17ano                       NGC 5541                       TNS        ATEL 9986
+2017ms  PTSS-17dfc                      PS17cfh                         SDSS J102641.99+364053.2       TNS        ATEL 9991
+                                        Gaia17axi                                                                 ATEL 9992
+2017mu  PTSS-17dgm                      PS17qr                          GALEXASC J093036.72+212437.4   TNS        ATEL 10018 06gz
+2017nk  ASASSN-17bd                                                     2MASX J15591858+1336487        ATEL 10000 ATEL 10014 91T
+2017ns  ATLAS17alb                      PS17agl                         2MASX J02491020+1436036        TNS        ATEL 9996
+                                        Gaia17akz
+2017nw  ATLAS17ali                      PS17atr                         SDSS J111612.52+024828.9       TNS        ATEL 10010
+2017oz  ATLAS17amc                                                      SDSS J140641.53+301906.5       TNS        ATEL 10032
+2017po  ASASSN-17bh                     Gaia17ait                       UGC 10166                     aATEL 10013 ATEL 10032
+                                        CSS170130:160352+395924
+2017wb  ASASSN-17bo                     PS17awj                         2MASX J11011991+7039548        ATEL 10022 ATEL 10026
+                                        Gaia17air
+2017ya  ATLAS17arb                                                      SDSS J001644.50+152030.6       TNS        ATEL 10032
+2017yh  ASASSN-17bs                     Gaia17ahm                       IC 1269                        ATEL 10031 ATEL 10041
+2017yk  ATLAS17asj                      PS17bqx                         2MASX J09443215-1218233        TNS        ATEL 10032
+2017zd  ATLAS17auc                                                      2MASX J13324217-2148034        TNS        ATEL 10053
+2017aaa PS17akj                         Gaia17alw                       LCRS B134713.8-024957          TNS        ATEL 10056
+2017adj ATLAS17axb                      Gaia17amq                       GALEXASC J134322.97-195637.5   TNS        ATEL 10056
+                                        PS17bws
+2017awz ATLAS17bas                                                      SDSS J110735.45+225104.1       TNS        ATEL 10094 91T
+2017azk PS17bii                                                         2MASX J11253836+0720042        TNS        ATEL 10124
+2017cfb ATLAS17cof                      PS17bwt                         CGCG 073-094                   TNS        ATEL 10178
+                                        CSS170417:135407+092446
+                                        Gaia17blj
+2017cfc ATLAS17cog                      PS17cfr                         UGC 8783                       TNS        ATEL 10212
+2017cfd kait-17I                        Gaia17avm                       IC 511                         TNS        ATEL 10182
+                                        PS17ceu
+2017cgr MASTER OT J083256.92-035128.1   PS17bup                         2MASX J08325728-0351295        ATEL 10074 ATEL 10093
+                                        Gaia17atq
+2017cii ASASSN-17du                     Gaia17baa                       SDSS J163319.94+234356.4       ATEL 10200 ATEL 10212
+                                        PS17dbv
+                                        ATLAS17byo
+2017ciy ATLAS17daf                      MLS170408:170407+250310         2MASX J17040672+2503184        TNS        ATEL 10212
+                                        Gaia17azx
+                                        PS17cyr
+2017cju ASASSN-17eb                     PS17dbp                         2MASX J15383353+1320423        ATEL 10206 ATEL 10207
+2017cjv ATLAS17dda                      PS17cci                         LCRS B100813.8-033156          TNS        ATEL 10212
+2017ckd PTSS-17niq                      PS17bww                         2MASX J14201616+1520386        TNS        ATEL 10225
+2017ckx ASASSN-17ee                                                     UGC 4030 NED01                 ATEL 10232 ATEL 10232
+2017coa                                                                 SDSS J084955.19+560554.6       TNS        ATEL 10235
+2017cpu ASASSN-17ej                     PS17ckr                         2MASX J14075270+0938281        ATEL 10241 TNS
+        ASASSN-15bc                                                     LEDA 170061                    ATEL 6943  ATEL 6949  91T
+                                                                                                                  ATEL 6956
+        ASASSN-15bm                                                     GALEXASC J150551.56-053737.2   ATEL 6983  ATEL 6988
+        ASASSN-15fa                     Gaia15adb                       NGC 6319                       ATEL 7245  ATEL 7253  91T
+        ASASSN-15fs                     Gaia15afh                       CGCG 229-10                    ATEL 7296  ATEL 7306
+                                        PS15aij
+        ASASSN-15ga                                                     NGC 4866                       ATEL 7317  ATEL 7333  91bg
+        ASASSN-15go                                                     2MASX J06113048-1629085        ATEL 7349  ATEL 7368
+                                                                                                                  ATEL 7375
+        ASASSN-15hg                                                     CGCG 63-98                     ATEL 7413  ATEL 7420
+                                                                                                                  ATEL 7421
+        ASASSN-15hy                     PS15aou                         Anonymous                      ATEL 7450  ATEL 7452  06gz
+        ASASSN-15il                                                     2MASX J15570808-1240252        ATEL 7491  ATEL 7497
+        ASASSN-15jl                     PS15aol                         SDSS J152241.16+505836.0       ATEL 7527  ATEL 7535
+        ASASSN-15jt                                                     2MASX J13080914+2749354        ATEL 7551  ATEL 7558
+        ASASSN-15kx                                                     MCG +6-49-1                    ATEL 7621  ATEL 7623
+        ASASSN-15la                     PS15bdj                         NGC 5517                       ATEL 7626  ATEL 7627
+        ASASSN-15lg                                                     CGCG 44-42                     ATEL 7635  ATEL 7640
+                                                                                                                  ATEL 7644
+        ASASSN-15lu                                                     SDSS J132112.88+401556.7       ATEL 7698  ATEL 7707  91T
+        ASASSN-15mf                                                     UGC 9108 NED02                 ATEL 7775  ATEL 7781
+        ASASSN-15mg                                                     2MASX J15322270+4150586        ATEL 7780  ATEL 7787
+        ASASSN-15mi                                                     MRK 283a                       ATEL 7790  ATEL 7796  91T
+        ASASSN-15np                                                     2MASX J15060265+0733415        ATEL 7878  ATEL 7888
+        ASASSN-15nq                                                     2MFGC 13779                    ATEL 7880  ATEL 7885
+                                                                                                                  ATEL 7888
+        ASASSN-15nr                                                     CGCG 82-31                     ATEL 7881  ATEL 7882  91T
+        ASASSN-15od                     DES15X3iv                       MCG -1-7-4                     ATEL 7907  ATEL 7913
+                                                                                                                  ATEL 8167
+        ASASSN-15oh                                                     MCG +6-49-27                   ATEL 7911  ATEL 7924
+        ASASSN-15pm                     CSS150913:013836-044047         2MASX J01383676-0440581        ATEL 8041  ATEL 8072
+        ASASSN-15pn                                                     SDSS J040326.23-052930.6       ATEL 8041  ATEL 8072
+                                                                                                                  ATEL 8073
+        ASASSN-15pr                                                     2MASX J23063962-1234238        ATEL 8051  ATEL 8072
+                                                                                                                  ATEL 8073
+        ASASSN-15py                                                     SDSS J080519.59+225751.1       ATEL 8098  ATEL 8105
+        ASASSN-15rw                     CSS151031:021558+121414         GALEXASC J021558.44+121415.2   ATEL 8212  ATEL 8239
+                                        MLS151211:021558+121414                                                   ATEL 8249
+                                        PS15coh
+        ASASSN-15sb                                                     2MFGC 04848                    ATEL 8217  ATEL 8217
+        ASASSN-15sf                     LSQ15bjb                        GALEXASC J001127.51-062549.8   ATEL 8226  ATEL 8230
+                                        PS15cog
+        ASASSN-15so                                                     NGC 3583                       ATEL 8256  ATEL 8259
+                                                                                                                  ATEL 8261
+        ASASSN-15ss                                                     MCG -2-16-4                    ATEL 8273  ATEL 8279
+        ASASSN-15tg                     Gaia16afu                       GALEXASC J002041.66+251341.1   ATEL 8347  ATEL 8350  91T
+        ASASSN-15ti                                                     2MASX J03051061+3754003        ATEL 8351  ATEL 8356
+        ASASSN-15tz                                                     UGC 2164                       ATEL 8404  ATEL 8410
+        ASASSN-15uu                                                     MCG +3-5-13                    ATEL 8480  ATEL 8495
+        ASASSN-15uv                     PS15dqu                         2MASX J08270817+2748382        ATEL 8488  ATEL 8493
+        ASASSN-15uw                                                     2MASX J02353437-0603496        ATEL 8490  ATEL 8506
+        CSS151120:044526-190158                                         Anonymous                      ATEL 8320  ATEL 8320  91T
+        iPTF17fs                                                        Anonymous                      GCN 20401  GCN 20409
+        MASTER OT J151647.17+283742.8   CSS160712:151647+283743         2MASX J15164763+2837061        ATEL 9204  ATEL 9243
+        MASTER OT J222232.87-185224.3   PSN J22223287-1852243           IC 5210                        ATEL 7632  ATEL 7640  91bg
+        PS15mt                                                          SDSS J095444.27+231151.6       ATEL 7250  ATEL 7250
+        PS15zn                                                          2MASX J10495032+1752553        ATEL 7375  ATEL 7375  Ic
+        PS15adh                                                         2MASX J13303174-0044033        ATEL 7431  ATEL 7431
+        PS15ahs                         Gaia15afd                       MCG +7-37-11                   ATEL 7471  ATEL 7477
+                                                                                                                  ATEL 7611
+        PS15aii                         Gaia15afk                       CGCG 71-25                     ATEL 7484  ATEL 7486
+        PS15akf                         CSS150519:141711+072139         2MASX J14171303+0721454        ATEL 7519  ATEL 7519
+        PS15asb                         CSS150619:142020-091803         Anonymous                      ATEL 7683  ATEL 7683
+        PS15atx                                                         2MASX J13031865-2303572        ATEL 7679  ATEL 7679
+        PS15bbn                                                         Anonymous                      ATEL 7753  ATEL 7777
+                                                                                                                  ATEL 7832
+        PS15bdr                                                         2MASX J16544931+3643391        ATEL 7785  ATEL 7785
+        PS15bif                                                         Anonymous                      ATEL 7832  ATEL 7832  91T
+        PS15bjg                                                         2MASX J22551005-0024333        ATEL 7846  ATEL 7846
+        PS15brr                         MASTER OT J235325.61-153917.6   GALEXASC J235326.18-153921.5   ATEL 7905  ATEL 7934  91T
+                                        PSN J23532561-1539176
+        PS15bsq                         CSS150918:234152-083816         MCG -02-60-012                 ATEL 7937  ATEL 7937
+        PS15bst                                                         GALEXASC J233401.02-131743.5   ATEL 7937  ATEL 7937
+        PS15bwh                                                         Anonymous                      ATEL 8037  ATEL 8037  91T
+        PS15bzz                         CSS150918:003742+014547         2MASX J00374156+0146014        ATEL 8069  ATEL 8069
+                                        iPTF15cpg
+        PS15cfn                                                         GALEXASC J215922.04-210713.3   ATEL 8151  ATEL 8151  91T
+        PS15cge                                                         2MASX J23352102+0110271        ATEL 8151  ATEL 8151
+        PS15cku                                                         2MASX J01242239+0335168        ATEL 8200  ATEL 8200
+        PS15cms                                                         2MASX J09583540+0044336        S16        S16
+        PS15cwx                                                         2MFGC 04279                    ATEL 8299  ATEL 8300  91T
+                                                                                                                  ATEL 8301
+        PS15cze                                                         2MASX J03472342+0052316        ATEL 8363  ATEL 8363
+        PSN J01534240+2956107                                           UGC 1359                       TOCP       ATEL 8506
+        PSN J02524671+4656470                                           UGC 2351                       TOCP       ATEL 8081
+        PSN J08593491+4555343           Gaia15acx                       UGC 4709                       TOCP       ATEL 7222
+                                        PS15tb                                                                    ATEL 7234
+        PSN J12040516+1404059           Gaia15agh                       CGCG 69-37                     TOCP       ATEL 7641
+                                                                                                                  ATEL 7556
+        PSN J16025128+4713292           PS15aoq                         UGC 10156                      TOCP       ATEL 7544
+                                                                                                                  ATEL 7611
+        PSN J16283836+3932552           PS15aot                         NGC 6166                       TOCP       ATEL 7528  91bg
+                                                                                                                  ATEL 7533
+        PSN J20435314+1230304                                           NGC 6956                       TOCP       ATEL 7796
+        PSN J23102264+0735202           PSN J23101633+0732493           NGC 7499                       TOCP       ATEL 8016  06gz
+        PSN J23523718+1433092           PS15cut                         UGC 12822                      TOCP       ATEL 8081
