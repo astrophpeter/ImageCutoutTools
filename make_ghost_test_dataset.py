@@ -20,6 +20,7 @@ sn_name_one, sn_name_two, host_names = raw_data[0].values, raw_data[1].values, r
 
 sn_coords = []
 host_coords = []
+sn_names = []
 
 for sn_one, sn_two, name in zip(sn_name_one, sn_name_two, host_names):
 
@@ -36,15 +37,17 @@ for sn_one, sn_two, name in zip(sn_name_one, sn_name_two, host_names):
     sn_name = 'sn' + sn_one
     sn_data = Simbad.query_object(sn_name)
     if sn_data is not None:
-        print("here", sn_data)
         sn_coords.append(simbad_to_skycoord(sn_data))
+        sn_names.append(sn_one)
     else:
 
         sn_data = Simbad.query_object(sn_two)
         if sn_data is not None:
             sn_coords.append(simbad_to_skycoord(sn_data))
+            sn_names.append(sn_two)
         else:
             sn_coords.append(None)
+            sn_names.append(None)
 
 
 sn_ra, sn_dec, host_ra, host_dec = [], [], [], []
@@ -56,9 +59,15 @@ for sn, host in zip(sn_coords, host_coords):
         sn_dec.append(sn.dec.degree)
         host_ra.append(host.ra.degree)
         host_dec.append(host.dec.degree)
+    else:
+        sn_ra.append(None)
+        sn_dec.append(None)
+        host_ra.append(None)
+        host_dec.append(None)
 
 
-data = pd.DataFrame({'sn_ra' : sn_ra,
+data = pd.DataFrame({'sn name': sn_names,
+                     'sn_ra' : sn_ra,
                      'sn_dec' : sn_dec,
                      'host_ra' : host_ra,
                      'host_dec' : host_dec})

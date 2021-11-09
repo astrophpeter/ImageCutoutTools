@@ -38,7 +38,7 @@ PanSTARRS_z:
   hips_id: 'CDS/P/PanSTARRS/DR1/z'
   pixel_size_arcsec: 0.26
 PanSTARRS_y:
-  hips_id: 'CDS/P/PanSTARRS/DR1/z'
+  hips_id: 'CDS/P/PanSTARRS/DR1/y'
   pixel_size_arcsec: 0.26
 SDSS_i:
   hips_id: 'CDS/P/SDSS9/i'

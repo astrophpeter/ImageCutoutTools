@@ -3,26 +3,40 @@ import matplotlib.pyplot as plt
 from utils import find_host_data
 from astropy.coordinates import SkyCoord
 
+
+
 test_data = pd.read_csv('data/foley+18_table1_clean.csv')
 
-ghost_true_sep = []
+ghost_host_ra = []
+ghost_host_dec = []
 
 
 
 for _, row in test_data.iterrows():
-    host_data = find_host_data(SkyCoord(row['sn_ra'], row['sn_dec'], unit='deg'))
+
+    if not pd.isna(row['sn_ra']):
+        host_data = find_host_data(SkyCoord(row['sn_ra'],
+                                            row['sn_dec'],
+                                            unit='deg'))
+    else:
+        host_data = None
+
     if host_data is not None:
         ghost_position = host_data['position']
-        true_host = SkyCoord(ra=row['host_ra'], dec=row['host_dec'], unit='deg')
-        ghost_true_sep.append(true_host.separation(ghost_position).arcsecond)
+        ghost_host_ra.append(ghost_position.ra)
+        ghost_host_dec.append(ghost_position.dec)
+    else:
+        ghost_host_ra.append(None)
+        ghost_host_dec.append(None)
+
+
+test_data['ghost_host_ra'], test_data['ghost_host_dec'] = ghost_host_ra, ghost_host_dec
+print(test_data)
+test_data.to_csv('data/foley+18_ghost.csv', index=False)
 
 
 
-plt.hist(ghost_true_sep, bins=20)
-plt.xlabel('GHOST vs True Host Separation [arcsec]')
-plt.ylabel('Count')
-plt.title('Foley+18 Foundation Supernova Survey')
-plt.savefig('GHOST_test.png', dpi=200)
+
 
 
 

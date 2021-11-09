@@ -97,13 +97,13 @@ def cutout(position, survey, fov=Quantity(0.2, unit='deg')):
                                height=int(num_pixels), fov=fov,
                                projection='TAN', format='fits')
         print(f'Successfully downloaded {survey.name} data')
-    except ReadTimeoutError:
+    except:
         print(f'Conection timed out, could not download {survey.name} data')
         fits = None
     return fits
 
 
-def download_image_data(position, survey_list, fov=Quantity(0.5, unit='deg')):
+def download_image_data(position, survey_list, fov=Quantity(0.2, unit='deg')):
     """
     Download all available imaging from a list of surveys
 
@@ -115,7 +115,7 @@ def download_image_data(position, survey_list, fov=Quantity(0.5, unit='deg')):
     :survey_list : list[Survey]
         List of surveys to download data from
     :fov : :class:`~astropy.units.Quantity`,
-    default=Quantity(0.2,unit='deg')
+    default=Quantity(0.1,unit='deg')
         Field of view of the cutout image, angular length of one of the sides
         of the square cutout. Angular astropy quantity. Default is angular
         length of 0.2 degrees.
@@ -185,6 +185,7 @@ def match_source(position, source_catalog, wcs):
     source_x_pixels, source_y_pixels = source_catalog.xcentroid, source_catalog.ycentroid
     closest_source_index = np.argmin(np.hypot(host_x_pixel - source_x_pixels,
                                               host_y_pixel - source_y_pixels))
+
     return source_catalog[closest_source_index]
 
 
@@ -207,6 +208,7 @@ def elliptical_sky_aperture(source_catalog, wcs, aperture_scale=3.0):
         Elliptical sky aperture of the source in the source catalog.
     """
     center = (source_catalog.xcentroid, source_catalog.ycentroid)
+    print(source_catalog)
     semi_major_axis = source_catalog.semimajor_sigma.value * aperture_scale
     semi_minor_axis = source_catalog.semiminor_sigma.value * aperture_scale
     orientation_angle = source_catalog.orientation.to(u.rad).value
@@ -228,9 +230,8 @@ def find_host_data(position, name='No name'):
 
     Returns
     -------
-    :host_information : dict[str:`~astropy.coordinates.SkyCoord`]
-        Dictionary containing the object's host information, fields are
-        the position.
+    :host_information : ~astropy.coordinates.SkyCoord`
+        Host position
     """
     #getGHOST(real=False, verbose=0)
     host_data = getTransientHosts(snCoord=[position],
@@ -246,10 +247,15 @@ def find_host_data(position, name='No name'):
         for dir in dir_list: os.rmdir(dir)
 
 
-    return {'position': SkyCoord(ra=host_data['raMean'][0],
-                                 dec=host_data['decMean'][0],
-                                 unit='deg')
-            }
+    if len(host_data) == 0:
+        host_position = None
+    else:
+        host_position = SkyCoord(ra=host_data['raMean'][0],
+                             dec=host_data['decMean'][0],
+                             unit='deg')
+
+
+    return host_position
 
 def estimate_background(image):
     """
@@ -287,7 +293,7 @@ def construct_aperture(image, position):
     background = estimate_background(image)
     catalog = build_source_catalog(image, background)
     source_data = match_source(position, catalog, wcs)
-    print(f'source data: {dir(source_data)}')
+    print(f'source data: {source_data}')
     return elliptical_sky_aperture(source_data, wcs)
 
 
@@ -309,8 +315,15 @@ def pick_largest_aperture(position, image_dict):
          name of the survey.
     """
 
-    apertures = {name : construct_aperture(image, position)
-                 for name, image in image_dict.items()}
+    apertures = {}
+
+    for name, image in image_dict.items():
+        try:
+            aperture = construct_aperture(image, position)
+            apertures[name] = aperture
+        except:
+            print(f'Could not fit aperture to {name} imaging data')
+
 
     aperture_areas = {}
     for image_name in image_dict:
@@ -343,8 +356,8 @@ def run_forced_aperture_photometry(position, survey_list):
 
 
 
-supernova_position = SkyCoord(ra=188.5148408, dec=7.6991489, unit='deg')
-survey_list = survey_list('survey_metadata.yml')
+#supernova_position = SkyCoord(ra=188.5148408, dec=7.6991489, unit='deg')
+#survey_list = survey_list('survey_metadata.yml')
 
-run_forced_aperture_photometry(supernova_position, survey_list[:8])
+#run_forced_aperture_photometry(supernova_position, survey_list)
 
