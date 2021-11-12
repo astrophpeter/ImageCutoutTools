@@ -236,7 +236,7 @@ def find_host_data(position, name='No name'):
     #getGHOST(real=False, verbose=0)
     host_data = getTransientHosts(snCoord=[position],
                                          snName=[name],
-                                         verbose=1, starcut='normal')
+                                         verbose=1, starcut='gentle', ascentMatch=True)
 
     # clean up after GHOST...
     dir_list = glob.glob('transients_*/*/*')
@@ -355,9 +355,12 @@ def run_forced_aperture_photometry(position, survey_list):
     print(largest_aperture)
 
 
+position = SkyCoord(ra=188.5148408, dec=7.6991489, unit='deg')
+survey_list = survey_list('survey_metadata.yml')
 
-#supernova_position = SkyCoord(ra=188.5148408, dec=7.6991489, unit='deg')
-#survey_list = survey_list('survey_metadata.yml')
+images = cutout(position, survey_list[9])
+
+print(images[0].header)
 
 #run_forced_aperture_photometry(supernova_position, survey_list)
 
